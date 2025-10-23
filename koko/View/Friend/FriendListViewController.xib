@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendListViewController" customModule="koko" customModuleProvider="target">
+            <connections>
+                <outlet property="searchField" destination="Y8Y-MB-VPc" id="wSu-uE-Knu"/>
+                <outlet property="tableView" destination="2E6-gg-iIq" id="8il-7g-Dsi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DgB-oQ-t30">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VG-zK-HBp">
+                            <rect key="frame" x="5" y="0.0" width="383" height="39"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="想轉一筆給誰？" textAlignment="natural" minimumFontSize="17" background="ic_SearchBarSearchGray" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-MB-VPc" customClass="CustomTextField" customModule="koko" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="39"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="onSearchTextChanged:" destination="-1" eventType="editingChanged" id="xCn-WW-K9c"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtQ-wX-Vz7">
+                                    <rect key="frame" x="343" y="0.0" width="40" height="39"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="wYb-I6-sIN"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="ic_AddFriends"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-gg-iIq">
+                            <rect key="frame" x="0.0" y="44" width="393" height="808"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2E6-gg-iIq" firstAttribute="leading" secondItem="DgB-oQ-t30" secondAttribute="leading" id="IjA-fZ-uf1"/>
+                        <constraint firstAttribute="trailing" secondItem="2E6-gg-iIq" secondAttribute="trailing" id="ZEe-IF-wcP"/>
+                        <constraint firstAttribute="trailing" secondItem="9VG-zK-HBp" secondAttribute="trailing" constant="5" id="deW-Ob-8fe"/>
+                        <constraint firstItem="9VG-zK-HBp" firstAttribute="leading" secondItem="DgB-oQ-t30" secondAttribute="leading" constant="5" id="tA0-Cm-L4d"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DgB-oQ-t30" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AEV-Yj-3K3"/>
+                <constraint firstAttribute="trailing" secondItem="DgB-oQ-t30" secondAttribute="trailing" id="Axz-5R-fAx"/>
+                <constraint firstItem="DgB-oQ-t30" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DFF-6D-TJS"/>
+                <constraint firstAttribute="bottom" secondItem="DgB-oQ-t30" secondAttribute="bottom" id="dC5-Xy-s6v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-60.305343511450381" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_AddFriends" width="25" height="25"/>
+        <image name="ic_SearchBarSearchGray" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

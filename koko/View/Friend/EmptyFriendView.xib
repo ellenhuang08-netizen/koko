@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyFriendView" customModule="koko" customModuleProvider="target">
+            <connections>
+                <outlet property="addFriendBtn" destination="k1g-A4-Xg9" id="fbc-Ll-5Ud"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bX1-M5-qSF"/>
+                <outlet property="settingLabel" destination="ADu-zG-qWw" id="DNn-Uk-XRh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="495"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_FriendsEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="noB-Jh-igB">
+                    <rect key="frame" x="65" y="5" width="332" height="172"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="就從加好友開始吧：）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-W2-8cO">
+                    <rect key="frame" x="44" y="218" width="374" height="25.333333333333343"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                    <color key="textColor" name="LightGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fip-MH-f7Z">
+                    <rect key="frame" x="67" y="253.33333333333334" width="328" height="33.666666666666657"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">與好友們一起用 KOKO 聊起來！
+還能互相收付款、發紅包喔：）</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="WarmGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幫助好友更快找到你？設定 KOKO ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADu-zG-qWw">
+                    <rect key="frame" x="43" y="461.66666666666669" width="376" height="18.333333333333314"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="13"/>
+                    <color key="textColor" name="WarmGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-A4-Xg9">
+                    <rect key="frame" x="91" y="325" width="280" height="38"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="ic_AddFriendWhite" title="加好友">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ADu-zG-qWw" secondAttribute="bottom" constant="15" id="04O-2X-lFJ"/>
+                <constraint firstItem="k1g-A4-Xg9" firstAttribute="top" secondItem="Fip-MH-f7Z" secondAttribute="bottom" constant="38" id="3DB-FQ-Rvc"/>
+                <constraint firstItem="noB-Jh-igB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="65" id="6Dl-yT-axh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="k1g-A4-Xg9" secondAttribute="trailing" constant="91" id="Gbn-lo-nqG"/>
+                <constraint firstItem="ADu-zG-qWw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="GfI-ft-laa"/>
+                <constraint firstAttribute="trailing" secondItem="ADu-zG-qWw" secondAttribute="trailing" constant="43" id="L3q-8R-kqI"/>
+                <constraint firstItem="nnf-W2-8cO" firstAttribute="top" secondItem="noB-Jh-igB" secondAttribute="bottom" constant="41" id="Mgr-Cz-aUg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nnf-W2-8cO" secondAttribute="trailing" constant="44" id="aFY-rY-7cV"/>
+                <constraint firstItem="Fip-MH-f7Z" firstAttribute="top" secondItem="nnf-W2-8cO" secondAttribute="bottom" constant="10" id="cPb-FG-qMe"/>
+                <constraint firstItem="noB-Jh-igB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="djV-xg-5Yj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="noB-Jh-igB" secondAttribute="trailing" constant="65" id="fi5-lL-O5B"/>
+                <constraint firstItem="k1g-A4-Xg9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="91" id="gQm-lK-eGD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fip-MH-f7Z" secondAttribute="trailing" constant="67" id="iAA-cg-Pco"/>
+                <constraint firstItem="nnf-W2-8cO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="44" id="kQA-kY-DSz"/>
+                <constraint firstItem="Fip-MH-f7Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67" id="qTo-XG-rk5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-12.213740458015266" y="-105.98591549295776"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_AddFriendWhite" width="24" height="24"/>
+        <image name="img_FriendsEmpty" width="245" height="172"/>
+        <namedColor name="LightGrey">
+            <color red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WarmGrey">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
