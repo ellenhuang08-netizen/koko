@@ -21,6 +21,7 @@ final class ScenarioPickerViewController: UIViewController {
         view.backgroundColor = .white
 
         // Table
+        tableView.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
