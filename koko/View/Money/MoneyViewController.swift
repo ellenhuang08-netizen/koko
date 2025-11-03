@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import Lottie
 
 class MoneyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let aniView = LottieAnimationView(name: "ani_404")
+        view.addSubview(aniView)
+        aniView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            aniView.topAnchor.constraint(equalTo: view.topAnchor),
+            aniView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            aniView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            aniView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        aniView.loopMode = .loop
+        aniView.play()
         // Do any additional setup after loading the view.
     }
     

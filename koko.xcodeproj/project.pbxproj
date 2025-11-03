@@ -34,6 +34,10 @@
 		6366CE242EA752EA00EE4F26 /* InviteBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6366CE232EA752EA00EE4F26 /* InviteBannerView.swift */; };
 		6366CE2C2EA79C2D00EE4F26 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6366CE2B2EA79C2D00EE4F26 /* CardView.swift */; };
 		6366CE2E2EA79C3B00EE4F26 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366CE2D2EA79C3B00EE4F26 /* CardView.xib */; };
+		63908FD52EB8AE90007F79BF /* ani_404.json in Resources */ = {isa = PBXBuildFile; fileRef = 63908FD42EB8AE90007F79BF /* ani_404.json */; };
+		63908FD82EB8AEA2007F79BF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 63908FD72EB8AEA2007F79BF /* Lottie */; };
+		63908FDA2EB8AEA2007F79BF /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 63908FD92EB8AEA2007F79BF /* Lottie-Dynamic */; };
+		63908FDD2EB8AEBE007F79BF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63908FDC2EB8AEBE007F79BF /* MoneyViewController.swift */; };
 		63A268892EA8D1BC00318B85 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A268882EA8D1BC00318B85 /* CustomTextField.swift */; };
 		63FF9A462EA2106800F1EBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF9A452EA2106800F1EBC4 /* AppDelegate.swift */; };
 		63FF9A482EA2106800F1EBC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF9A472EA2106800F1EBC4 /* SceneDelegate.swift */; };
@@ -91,6 +95,8 @@
 		6366CE232EA752EA00EE4F26 /* InviteBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteBannerView.swift; sourceTree = "<group>"; };
 		6366CE2B2EA79C2D00EE4F26 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		6366CE2D2EA79C3B00EE4F26 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		63908FD42EB8AE90007F79BF /* ani_404.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ani_404.json; sourceTree = "<group>"; };
+		63908FDC2EB8AEBE007F79BF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		63A268882EA8D1BC00318B85 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		63FF9A422EA2106800F1EBC4 /* koko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FF9A452EA2106800F1EBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63908FD82EB8AEA2007F79BF /* Lottie in Frameworks */,
+				63908FDA2EB8AEA2007F79BF /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +174,7 @@
 		6366CDF32EA24FD400EE4F26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				63908FDB2EB8AEAA007F79BF /* Money */,
 				6366CE1E2EA6241C00EE4F26 /* Setting */,
 				6366CE1D2EA6241500EE4F26 /* Friend */,
 				6366CDF92EA2B2F000EE4F26 /* UnderlineSegmentControl.swift */,
@@ -205,6 +214,22 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		63908FD32EB8AE7E007F79BF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				63908FD42EB8AE90007F79BF /* ani_404.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		63908FDB2EB8AEAA007F79BF /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				63908FDC2EB8AEBE007F79BF /* MoneyViewController.swift */,
+			);
+			path = Money;
+			sourceTree = "<group>";
+		};
 		63FF9A392EA2106800F1EBC4 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +253,7 @@
 		63FF9A442EA2106800F1EBC4 /* koko */ = {
 			isa = PBXGroup;
 			children = (
+				63908FD32EB8AE7E007F79BF /* Animation */,
 				6366CDF32EA24FD400EE4F26 /* View */,
 				63FF9A452EA2106800F1EBC4 /* AppDelegate.swift */,
 				63FF9A472EA2106800F1EBC4 /* SceneDelegate.swift */,
@@ -275,6 +301,10 @@
 			dependencies = (
 			);
 			name = koko;
+			packageProductDependencies = (
+				63908FD72EB8AEA2007F79BF /* Lottie */,
+				63908FD92EB8AEA2007F79BF /* Lottie-Dynamic */,
+			);
 			productName = koko;
 			productReference = 63FF9A422EA2106800F1EBC4 /* koko.app */;
 			productType = "com.apple.product-type.application";
@@ -347,6 +377,9 @@
 				Base,
 			);
 			mainGroup = 63FF9A392EA2106800F1EBC4;
+			packageReferences = (
+				63908FD62EB8AEA2007F79BF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 63FF9A432EA2106800F1EBC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,6 +404,7 @@
 				6366CE0C2EA496D000EE4F26 /* FriendListTableViewCell.xib in Resources */,
 				6366CE2E2EA79C3B00EE4F26 /* CardView.xib in Resources */,
 				6366CE162EA5E6D000EE4F26 /* EmptyFriendView.xib in Resources */,
+				63908FD52EB8AE90007F79BF /* ani_404.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +441,7 @@
 				6366CE072EA4900400EE4F26 /* FriendListViewController.swift in Sources */,
 				6366CE242EA752EA00EE4F26 /* InviteBannerView.swift in Sources */,
 				63FF9A482EA2106800F1EBC4 /* SceneDelegate.swift in Sources */,
+				63908FDD2EB8AEBE007F79BF /* MoneyViewController.swift in Sources */,
 				6366CDF82EA2A69400EE4F26 /* UserInfoViewModel.swift in Sources */,
 				6366CE222EA631EE00EE4F26 /* LoadingViewController.swift in Sources */,
 				6366CDFD2EA2B3F700EE4F26 /* FriendsContainerViewController.swift in Sources */,
@@ -771,6 +806,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63908FD62EB8AEA2007F79BF /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63908FD72EB8AEA2007F79BF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63908FD62EB8AEA2007F79BF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		63908FD92EB8AEA2007F79BF /* Lottie-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63908FD62EB8AEA2007F79BF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = "Lottie-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63FF9A3A2EA2106800F1EBC4 /* Project object */;
 }

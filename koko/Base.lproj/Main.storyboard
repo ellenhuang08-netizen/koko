@@ -157,7 +157,7 @@
         <!--Money-->
         <scene sceneID="1nz-1z-C91">
             <objects>
-                <viewController title="Money" id="ybl-g6-4Hm" sceneMemberID="viewController">
+                <viewController title="Money" id="ybl-g6-4Hm" customClass="MoneyViewController" customModule="koko" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ARp-ec-Hty">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
